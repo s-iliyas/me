@@ -100,7 +100,8 @@ export default function SkillsPage() {
 
   const barVariants = {
     hidden: { width: 0 },
-    visible: (proficiency) => ({
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    visible: (proficiency: any) => ({
       width: `${proficiency}%`,
       transition: { duration: 1, ease: [0.165, 0.84, 0.44, 1] },
     }),

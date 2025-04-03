@@ -655,31 +655,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, index }) =>
   );
 };
 
-// Update your CursorContextProvider component's global styles (you can add this at the end of your portfolio component)
-export const globalStyles = `
-  /* Ensure cursor is always on top of modals */
-  html,
-  body {
-    cursor: none !important;
-  }
-
-  /* Override cursor for all interactive elements in modals */
-  .portfolio-card a,
-  .portfolio-card button,
-  .portfolio-card [role='button'] {
-    cursor: pointer !important; 
-    position: relative;
-    z-index: 60;
-  }
-
-  /* Maintain visible cursor above modal */
-  .fixed.inset-0.z-40 {
-    pointer-events: auto;
-    z-index: 40 !important;
-  }
-  
-  /* Ensure the custom cursor is always on top */
-  .pointer-events-none.fixed.left-0.top-0.z-50 {
-    z-index: 100 !important;
-  }
-`;

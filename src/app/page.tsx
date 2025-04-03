@@ -128,7 +128,7 @@ export default function AboutPage() {
             </motion.div>
 
             <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Hello, I'm <span className="gradient-text">Shaik Mohammed Iliyas</span>
+              Hello, I&apos;m <span className="gradient-text">Shaik Mohammed Iliyas</span>
             </h1>
 
             <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-300/90">
